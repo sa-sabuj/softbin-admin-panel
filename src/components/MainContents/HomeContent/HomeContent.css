@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    background: #FAFAFA;
+}
+
+/* font-family: 'Inter', sans-serif; */
+
+h1{
+    font-family: 'Inter', sans-serif;
+}
+h2,h3,h4,h5{
+    font-family: 'Inter', sans-serif;
+}
+p{
+    font-family: 'Inter', sans-serif;
+}
+a{
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.theme-bg-dark{
+    background: #0D1C1F;
+}
+
+.theme-btn {
+    padding: 9px 80px;
+    font-weight: 500;
+    font-size: 16.0133px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background: #1AD598;
+    border-radius: 2.66889px;
+    display: flex;
+    align-items: center;
+}
+
+.theme-btn svg{
+    margin-right: 10px;
+}
+
+.content-area {
+    width: 100%;
+    padding-left: 250px;
+    transition:.3s;
+    margin-top: 91px;
+}
+
+.content-area>.row{
+    margin: 0;
+}
+
+.content-inner {
+    padding: 25px;
+}
+
+.custom-card {
+    background: #ffffff;
+    box-shadow: 0px 5.33778px 26.6889px rgba(6, 6, 16, 0.04);
+    border-radius: 2.66889px;
+    padding: 25px;
+}
+
+.custom-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 26px;
+}
+
+.custom-card-body {
+    overflow-x: scroll;
+}
+
+.custom-card-header .heading {
+    display: flex;
+    align-items: center;
+}
+
+.custom-card-header .header-rigth {}
+
+.custom-card-header .heading svg {
+    margin-right: 10px;
+}
+
+.custom-card-header .heading h1 {
+    font-weight: 700;
+    font-size: 21.3511px;
+    line-height: 26px;
+/* identical to box height */
+    color: #515158;
+    margin: 0;
+}
+
+.custom-card-header .header-rigth p {font-weight: 500;font-size: 10px;line-height: 12px;color: rgba(6, 6, 16, 0.3);margin-bottom: 0;}
+
+.theme-form {}
+
+.theme-form button {
+    margin-left: auto;
+    margin-top: 30px;
+}
+
+.custom-form-group {
+    margin-bottom: 23px;
+}
+
+.custom-form-group label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 13px;
+/* identical to box height, or 95% */
+    color: #060610;
+    opacity: 0.6;
+    margin-bottom: 11px;
+}
+
+.custom-form-group .form-control {
+    background: #FAFAFA;
+    border: 1.33444px solid rgba(6, 6, 16, 0.03);
+    border-radius: 2.66889px;
+    padding: 11px 18px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 13px;
+/* identical to box height, or 83% */
+    color: #060610;
+    opacity: 0.6;
+}
+
+.custom-form-group label sup {
+    color: #F4694C;
+}
+
+.sidebar-widgets {
+    background: #ffffff;
+    padding: 30px;
+}
+
+.sidebar-widgets-inner{
+    padding: 25px;
+    border: 1.33444px solid rgba(6, 6, 16, 0.05);
+    border-radius: 2.66889px
+}
+
+.image-uploader {
+    margin-bottom: 35px;
+}
+
+.image-uploader label {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16.0133px;
+    line-height: 24px;
+/* or 150% */
+    color: #060610;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.image-uploader .preview {
+    background: #FAFAFA;
+    border: 1.33444px solid rgba(6, 6, 16, 0.03);
+    border-radius: 2.66889px;
+    padding: 5px;
+    height: 155px;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+
+.image-uploader .preview img {
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+}
+
+.image-uploader .form-control {
+    border-radius: 2.66889px;
+}
+
+.image-uploader label p {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    color: rgba(6, 6, 16, 0.3);
+    margin: 0;
+}
+
+.image-uploader label p span {
+    color: #F4694C;
+}
+
+.theme-table {
+    min-width: 902px;
+}
+
+.theme-table .table-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ECEAF3;
+}
+
+.theme-table .table-header p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 13px;
+/* identical to box height, or 95% */
+    color: rgba(6, 6, 16, 0.4);
+    opacity: 0.6;
+    padding: 20px 15px;
+    margin: 0;
+}
+
+.theme-table .table-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ECEAF3;
+    background: #ffffff;
+    position: relative;
+    transition: .2s;
+}
+
+.theme-table .table-row ::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background: #FEC601;
+    width: 6px;
+    transition: .2s;
+    height: 0;
+}
+.theme-table .table-row:hover ::before{
+   height: 100%;
+}
+
+.theme-table .table-row p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 13px;
+/* identical to box height, or 83% */
+    color: #060610;
+    opacity: 0.6;
+    margin: 0;
+    padding: 20px 15px;
+}
+
+.category-table p {
+    width: 20%;
+}
+
+.category-table p:nth-child(1) {
+    width: 30%;
+}
+
+.category-table p:nth-child(5) {
+    width: 10%;
+}
+
+.theme-table .table-row p:last-child {
+    opacity: 1;
+    display: flex;
+}
+
+.theme-table .table-row p:last-child a{
+    margin-right: 10px;
+}
+
+.theme-table .table-row:nth-child(even) {
+    background: #FCFCFC;
+}
+
+.theme-table .table-row:hover {
+    box-shadow: 0px 11.3047px 16.9571px rgba(0, 0, 0, 0.08);
+    z-index: 11;
+}
+
+.activity-logs {}
+
+.activity-logs li {
+    background: #FFFFFF;
+    border: 1.33444px solid rgba(6, 6, 16, 0.05);
+    border-radius: 2.66889px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin: 19px 0;
+}
+
+.activity-logs li .activity-log-content {}
+
+.activity-logs li .activity-log-content h4 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+/* identical to box height, or 83% */
+    color: #060610;
+    opacity: 0.6;
+}
+
+.activity-logs li .activity-log-content p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 13px;
+/* identical to box height, or 95% */
+    color: rgba(6, 6, 16, 0.4);
+    opacity: 0.6;
+    margin-bottom: 0;
+}
+
+.activity-logs li .activity-log-content h4 b {
+    color: #000000;
+}
+
+.ck-editor__editable[role="textbox"] {
+    /* editing area */
+    min-height: 200px;
+}
+
+.medias {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.medias li {
+    width: 24%;
+    margin: 3px;
+}
+
+.medias li img {
+    width: 100%;
+}

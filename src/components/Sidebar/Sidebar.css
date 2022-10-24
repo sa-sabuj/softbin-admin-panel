@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    background: #FAFAFA;
+}
+
+/* font-family: 'Inter', sans-serif; */
+
+h1{
+    font-family: 'Inter', sans-serif;
+}
+h2,h3,h4,h5{
+    font-family: 'Inter', sans-serif;
+}
+p{
+    font-family: 'Inter', sans-serif;
+}
+a{
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.theme-bg-dark{
+    background: #0D1C1F;
+}
+
+.theme-btn {
+    padding: 9px 80px;
+    font-weight: 500;
+    font-size: 16.0133px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background: #1AD598;
+    border-radius: 2.66889px;
+    display: flex;
+    align-items: center;
+}
+
+.theme-btn svg{
+    margin-right: 10px;
+}
+.sidebar {
+    width: 250px;
+    background: #ffffff;
+    height: calc(100vh - 91px);
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    padding: 25px 20px;
+    overflow: hidden;
+    transition: .2s;
+}
+
+.sidebar:hover{
+    width: 250px;
+}
+
+.sidebar ul {
+}
+
+.sidebar ul li {}
+
+.sidebar ul li a {
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 13px;
+/* identical to box height, or 95% */
+    color: #B5B5B8;
+    margin: 10px 0;
+    transition: .1s;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    border-left: 3px solid #FFD055;
+    background: linear-gradient(90deg, #ffd0551c, transparent);
+    color: #000000;
+}
+
+.sidebar ul li a svg {
+    min-width: 30px;
+    margin-right: 20px;
+}
+
+.sidebar ul li a:hover svg path{
+    fill: #FFD055;
+}
+
+.tutorial {
+    display: block;
+    margin-top: 30px;
+}
+
+.tutorial svg {
+    width: 100%;
+}
